@@ -1,0 +1,10 @@
+.dashboard {
+  background-color: rgb(var(--primary-color));
+
+  .red-box {
+    width: 100%;
+    height: 130px;
+    border: 5px solid red;
+    background-color: rgb(var(--black-color));
+  }
+}

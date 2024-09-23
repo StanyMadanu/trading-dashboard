@@ -1,0 +1,9 @@
+.login-wrapper {
+  height: 100vh;
+  .login {
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(var(--primary-color));
+  }
+}
