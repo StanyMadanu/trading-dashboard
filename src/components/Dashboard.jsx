@@ -76,9 +76,12 @@ const Dashboard = () => {
               <p>File systems</p>
             </div>
             <div className="card-body">
-              <div className="table-responsive">
+              <div
+                className="table-responsive overflowY-auto filesystem-table-wrapper"
+                style={{ maxHeight: "294px" }}
+              >
                 <table className="table table-dark table-striped">
-                  <thead>
+                  <thead className="position-sticky top-0">
                     <tr>
                       <th className="text-capitalize">state</th>
                       <th className="text-capitalize">service</th>
@@ -162,7 +165,7 @@ const Dashboard = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {Array.from({ length: 6 }).map((_, index) => (
+                    {Array.from({ length: 10 }).map((_, index) => (
                       <tr key={index}>
                         <td>
                           <span className="crit">crit</span>

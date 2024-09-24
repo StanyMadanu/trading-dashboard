@@ -27,6 +27,12 @@ body {
   color: rgb(var(--text-default));
 }
 
+a {
+  text-decoration: none;
+  color: rgb(var(--text-default));
+  display: inline-block;
+}
+
 button {
   border: none;
   border-radius: 5px;

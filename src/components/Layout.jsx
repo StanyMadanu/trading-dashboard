@@ -1,10 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Header from "./common/Header";
 
 const Layout = () => {
   return (
     <>
-      <Outlet />
+      <Header />
+      <div
+        className="main overflowX-hidden overflowY-auto"
+        style={{ maxHeight: "90vh" }}
+      >
+        <Outlet />
+      </div>
     </>
   );
 };

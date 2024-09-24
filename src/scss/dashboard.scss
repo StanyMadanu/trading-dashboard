@@ -20,3 +20,24 @@
     height: 90px !important;
   }
 }
+
+.filesystem-table-wrapper {
+  --webkit-scrollbar-width: 0px; /* Firefox */
+  overflow-y: auto;
+}
+
+.filesystem-table-wrapper {
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+  }
+}
