@@ -1,33 +1,48 @@
-import React, { useEffect, useRef } from "react";
-import { AgCharts } from "ag-charts-enterprise";
+import React, { useEffect, useState } from "react";
 
-const HorizontalBarGauge = () => {
-  const BarGauge = useRef(null);
+const HorizontalBarGauge = ({
+  fillValue,
+  fillColor = "#76c7c0",
+  bgColor = "#e0e0e0",
+  textFill = "#000",
+}) => {
+  const [fill, setFill] = useState(0);
 
   useEffect(() => {
-    if (BarGauge.current) {
-      const options = {
-        type: "linear-gauge",
-        direction: "horizontal",
-        container: BarGauge.current,
-        value: 80,
-        scale: {
-          min: 0,
-          max: 100,
-          fill: "#f5f6fa",
-        },
-
-        bar: {
-          fill: "#62E2C5",
-        },
-      };
-      AgCharts.createGauge(options);
-    }
-  }, []);
+    setFill(fillValue);
+  }, [fill]);
 
   return (
     <>
-      <div ref={BarGauge} className="bar-gauge-wrapper"></div>
+      <div class="gauge-container text-center">
+        <svg width="120" height="35">
+          <rect
+            class="gauge-bg"
+            x="0"
+            y="15"
+            width="100%"
+            height="20"
+            fill={bgColor}
+          />
+          <rect
+            class="gauge-fill"
+            x="0"
+            y="15"
+            width={fill}
+            height="20"
+            fill={fillColor}
+          />
+          <text
+            class="gauge-text fw-bold text-center"
+            x="50%"
+            y="30"
+            text-anchor="middle"
+            fill={textFill}
+          >
+            {fill}
+          </text>
+        </svg>
+      </div>
     </>
   );
 };

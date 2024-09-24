@@ -88,15 +88,17 @@ const Dashboard = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {Array.from({ length: 8 }).map((_, index) => (
+                    {Array.from({ length: 6 }).map((_, index) => (
                       <tr key={index}>
                         <td>
                           <span className="ok">ok</span>
                         </td>
                         <td>Filesystem /home/ma</td>
                         <td>
-                          {/* <HorizontalBarGauge /> */}
-                          Bar chart
+                          <HorizontalBarGauge
+                            fillValue="80.26%"
+                            fillColor="#76c7c0"
+                          />
                         </td>
                         <td>300.00 GiB</td>
                         <td>232.06 GiB</td>
