@@ -10,7 +10,7 @@ const HorizontalBarGauge = ({
 
   useEffect(() => {
     setFill(fillValue);
-  }, [fill]);
+  }, []);
 
   return (
     <>
