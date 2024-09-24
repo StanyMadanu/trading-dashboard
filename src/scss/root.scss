@@ -4,8 +4,9 @@
 
   --text-default: 255, 255, 255; //#FFFFFF
   --text-muted: 156, 156, 156; //#9c9c9c
+  --text-black: 0, 0, 0; //#000000
 
-  --green-color: 24, 142, 101; //#188E65
+  --green-color: 19, 211, 137; //#13d389
   --red-color: 200, 50, 50; //#C83232
   --black-color: 0, 0, 0; //#000000
 
@@ -94,4 +95,43 @@ h6 {
 .row > * {
   padding-right: calc(var(--bs-gutter-x) * 0.1);
   padding-left: calc(var(--bs-gutter-x) * 0.1);
+}
+
+// table custom styles
+.table {
+  thead {
+    tr {
+      th {
+        font-size: 10px;
+        color: rgb(var(--text-muted));
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-size: 10px;
+
+        span {
+          &.ok {
+            text-transform: uppercase;
+            background-color: rgb(var(--green-color));
+            color: rgb(var(--text-black));
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+          }
+
+          &.crit {
+            text-transform: uppercase;
+            background-color: rgb(var(--red-color));
+            color: rgb(var(--text-default));
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
 }

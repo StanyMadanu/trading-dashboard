@@ -8,3 +8,15 @@
     background-color: rgb(var(--black-color));
   }
 }
+
+// bar gauge styles
+.bar-gauge-wrapper {
+  .ag-charts-canvas-center {
+    width: 200px;
+    height: 90px;
+  }
+  canvas {
+    width: 200px !important;
+    height: 90px !important;
+  }
+}

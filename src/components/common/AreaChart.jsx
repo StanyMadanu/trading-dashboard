@@ -318,7 +318,6 @@ const AreaChart = (props) => {
 
   return (
     <div id="chart">
-      {/* Pass the series and options as props to the ApexCharts component */}
       <ApexCharts options={options} series={series} type="area" height={350} />
     </div>
   );
