@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="row mb-1">
-        <div className="col-xl-2 col-lg-2 col-md-2 d-flex">
+        <div className="col-xl- col-lg-2 col-md-22 col-lg-2 col-md-2 d-flex">
           <div className="card flex-fill">
             <div className="card-heading">
               <p className="">OS Server name</p>
@@ -45,8 +45,9 @@ const Dashboard = () => {
               <p className="">CPU: Utilization</p>
             </div>
 
-            <div className="card-body">
-              <RadialGauge value={80.68} status="OK" statusColor="#00cc69" />
+            <div className="card-body no-chart">
+              {/* <RadialGauge value={80.68} status="OK" statusColor="#00cc69" /> */}
+              RadialGauge
             </div>
           </div>
         </div>
@@ -123,8 +124,9 @@ const Dashboard = () => {
               <p className="text-capitalize">memory: utilization</p>
             </div>
 
-            <div className="card-body">
-              <RadialGauge value={37.34} status="OK" statusColor="#00cc69" />
+            <div className="card-body no-chart">
+              {/* <RadialGauge value={37.34} status="OK" statusColor="#00cc69" /> */}
+              RadialGauge
             </div>
           </div>
         </div>
@@ -152,8 +154,8 @@ const Dashboard = () => {
       </div>
 
       <div className="row mb-1">
-        <div className="col-xl-4">
-          <div className="card">
+        <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+          <div className="card flex-fill">
             <div className="card-heading">
               <p>File systems</p>
             </div>
@@ -195,28 +197,82 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-2">
-          <div className="card">
-            <div className="card-heading">
-              <p>Disk IO: Utilization</p>
+
+        <div className="col-xl-8 col-lg-8 col-md-8">
+          <div className="row">
+            <div className="col-xl-4 col-lg-2 col-md-2 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Utilization</p>
+                </div>
+                <div className="card-body no-chart">
+                  {/* <RadialGauge
+                    value={37.34}
+                    status="OK"
+                    statusColor="#00cc69"
+                  /> */}
+                  RadialGauge
+                </div>
+              </div>
             </div>
-            <div className="card-body"></div>
+            <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Average end to end wait time</p>
+                </div>
+                <div className="card-body">
+                  <AreaChart />
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Average disk latency</p>
+                </div>
+                <div className="card-body">
+                  <AreaChart />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="col-xl-3 col-lg-3 col-md-3">
-          <div className="card">
-            <div className="card-heading">
-              <p>Disk IO: Average end to end wait time</p>
+
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Utilization</p>
+                </div>
+                <div className="card-body no-chart">
+                  {/* <RadialGauge
+                    value={37.34}
+                    status="OK"
+                    statusColor="#00cc69"
+                  /> */}
+                  RadialGauge
+                </div>
+              </div>
             </div>
-            <div className="card-body"></div>
-          </div>
-        </div>
-        <div className="col-xl-3 col-lg-3 col-md-3">
-          <div className="card">
-            <div className="card-heading">
-              <p>Disk IO: Average disk latency</p>
+            <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Average end to end wait time</p>
+                </div>
+                <div className="card-body">
+                  <AreaChart />
+                </div>
+              </div>
             </div>
-            <div className="card-body"></div>
+            <div className="col-xl-4 col-lg-4 col-md-4 d-flex">
+              <div className="card flex-fill">
+                <div className="card-heading">
+                  <p>Disk IO: Average disk latency</p>
+                </div>
+                <div className="card-body">
+                  <AreaChart />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

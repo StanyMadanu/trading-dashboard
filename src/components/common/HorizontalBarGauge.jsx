@@ -36,7 +36,7 @@ const HorizontalBarGauge = ({
             className="gauge-text fw-bold text-center"
             x="50%"
             y="30"
-            text-anchor="middle"
+            textAnchor="middle"
             fill={textFill}
           >
             {fill}
