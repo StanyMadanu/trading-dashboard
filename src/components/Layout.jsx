@@ -8,7 +8,7 @@ const Layout = () => {
       <Header />
       <div
         className="main overflowX-hidden overflowY-auto"
-        style={{ maxHeight: "90vh" }}
+        style={{ maxHeight: "95vh" }}
       >
         <Outlet />
       </div>

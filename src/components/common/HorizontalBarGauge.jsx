@@ -14,10 +14,10 @@ const HorizontalBarGauge = ({
 
   return (
     <>
-      <div class="gauge-container text-center">
+      <div className="gauge-container text-center">
         <svg width="120" height="35">
           <rect
-            class="gauge-bg"
+            className="gauge-bg"
             x="0"
             y="15"
             width="100%"
@@ -25,7 +25,7 @@ const HorizontalBarGauge = ({
             fill={bgColor}
           />
           <rect
-            class="gauge-fill"
+            className="gauge-fill"
             x="0"
             y="15"
             width={fill}
@@ -33,7 +33,7 @@ const HorizontalBarGauge = ({
             fill={fillColor}
           />
           <text
-            class="gauge-text fw-bold text-center"
+            className="gauge-text fw-bold text-center"
             x="50%"
             y="30"
             text-anchor="middle"

@@ -1,0 +1,18 @@
+.main {
+  --webkit-scrollbar-width: 0px;
+  overflow: hidden auto;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+  }
+}

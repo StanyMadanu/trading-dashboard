@@ -3,8 +3,18 @@ import Dashboard from "./components/Dashboard";
 import Layout from "./components/Layout";
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
+import OAuthCallback from "./components/OAuthCallback";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/user/oauth_callback",
+    element: <OAuthCallback />,
+  },
   {
     path: "",
     element: <Layout />,
@@ -15,10 +25,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/login",
-    element: <Login />,
-  },
+
   {
     path: "*",
     element: <NotFound />,

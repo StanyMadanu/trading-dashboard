@@ -1,30 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GoogleButton from "react-google-button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { API_ROUTES } from "../services/apiService";
 
 const Login = () => {
-  const loginWithGoogle = async (e) => {
+  const [signIn, setSignIn] = useState(false);
+  const navigate = useNavigate();
+
+  const handleGoogleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://192.168.0.105:3400/user/login");
-      console.log(response.data, "respose");
+      const response = await axios.post(API_ROUTES.LOGIN);
 
-      window.open(response.data.data, "_blank");
+      const googleLoginUrl = response.data.data;
+      console.log(googleLoginUrl);
+
+      window.open(googleLoginUrl, "_self");
+      setSignIn(true);
     } catch (error) {
+      console.error("Failed to initiate Google login", error);
       toast.error(error.message || "Login failed");
+      setSignIn(false);
     }
   };
 
+  useEffect(() => {
+    if (signIn) {
+      // console.log(window.location.href);
+    }
+  }, [signIn]);
+
   return (
     <div className="login-wrapper d-flex align-items-center justify-content-center">
-      <div className="login p-5">
+      <div className="login">
         <div className="login-with d-flex flex-column align-items-center gap-3 mb-5">
           <h5 className="mb-2">Log in with</h5>
-          <GoogleButton onClick={(e) => loginWithGoogle(e)} />
+          <GoogleButton onClick={(e) => handleGoogleLogin(e)} />
         </div>
 
         <form>

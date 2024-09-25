@@ -1,7 +1,8 @@
 .login-wrapper {
   height: 100vh;
   .login {
-    width: 30%;
+    width: clamp(300px, 30%, 450px);
+    padding: clamp(15px, 4%, 3rem);
     margin: auto;
     border-radius: 10px;
     background-color: rgb(var(--primary-color));

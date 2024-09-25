@@ -87,6 +87,7 @@ h6 {
   }
   .card-body {
     background-color: rgb(var(--card-body-bg));
+    padding: 5px;
 
     &.no-chart {
       display: flex;
@@ -109,6 +110,7 @@ h6 {
     tr {
       th {
         font-size: 10px;
+        text-wrap: nowrap;
         color: rgb(var(--text-muted));
       }
     }
@@ -117,6 +119,7 @@ h6 {
     tr {
       td {
         font-size: 10px;
+        text-wrap: nowrap;
 
         span {
           &.ok {
