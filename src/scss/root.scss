@@ -14,6 +14,11 @@
 
   --card-header-bg: 38, 47, 56; //#262F38
   --card-body-bg: 32, 39, 46; //#20272E
+
+  // landing page theme colors
+  --landing-primary-color: 0, 18, 50; //#001232
+  --landing-secondary-color: 6, 173, 94; //#06ad5e
+  --landing-text-default: 219, 226, 251; //#dbe2fb
 }
 
 * {
@@ -85,6 +90,14 @@ h6 {
 
 .fs-15 {
   font-size: 15px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-50 {
+  font-size: 50px;
 }
 
 .green-color {

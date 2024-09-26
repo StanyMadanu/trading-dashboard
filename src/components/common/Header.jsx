@@ -24,6 +24,11 @@ const Header = () => {
           help
         </Link>
       </div>
+      <div>
+        <Link to="/landing" className="text-capitalize fs-12 fw-semibold p-2">
+          Landing Page
+        </Link>
+      </div>
       <div className="ms-auto">
         <Link
           to="/login"
