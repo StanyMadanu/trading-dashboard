@@ -1,0 +1,25 @@
+// card styles
+.card {
+  border: none;
+  color: rgb(var(--text-default));
+  .card-heading {
+    text-align: center;
+    background-color: rgb(var(--card-header-bg));
+    padding: 3px 0;
+
+    p {
+      font-size: 12px;
+    }
+  }
+  .card-body {
+    background-color: rgb(var(--card-body-bg));
+    padding: 5px;
+
+    &.no-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// table custom styles
+.table {
+  thead {
+    tr {
+      th {
+        font-size: 12px;
+        text-wrap: nowrap;
+        color: rgb(var(--text-muted));
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-size: 12px;
+        text-wrap: nowrap;
+
+        span {
+          &.ok {
+            text-transform: uppercase;
+            background-color: rgb(var(--green-color));
+            color: rgb(var(--text-black));
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+          }
+
+          &.crit {
+            text-transform: uppercase;
+            background-color: rgb(var(--red-color));
+            color: rgb(var(--text-default));
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+          }
+
+          &.edit {
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(var(--lightgray-color));
+              border-radius: 3px;
+            }
+          }
+          &.remove {
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(var(--lightgray-color));
+              border-radius: 3px;
+            }
+          }
+
+          &.symbol {
+            background-color: rgb(var(--lightgray-color));
+            border-radius: 3px;
+
+            &:hover {
+              background-color: rgb(var(--blue-color));
+            }
+          }
+        }
+      }
+    }
+  }
+}

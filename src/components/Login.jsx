@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import GoogleButton from "react-google-button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { API_ROUTES } from "../services/apiService";
+import GoogleButton from "react-google-button";
 
 const Login = () => {
   const [signIn, setSignIn] = useState(false);
-  const navigate = useNavigate();
 
   const handleGoogleLogin = async (e) => {
     e.preventDefault();

@@ -7,8 +7,10 @@
   --text-black: 0, 0, 0; //#000000
 
   --green-color: 19, 211, 137; //#13d389
+  --blue-color: 41, 98, 255; //#2962FF
   --red-color: 200, 50, 50; //#C83232
   --black-color: 0, 0, 0; //#000000
+  --lightgray-color: 75, 77, 84; //#4b4d54
 
   --card-header-bg: 38, 47, 56; //#262F38
   --card-body-bg: 32, 39, 46; //#20272E
@@ -73,76 +75,30 @@ h6 {
   font-size: 12px;
 }
 
-// card styles
-.card {
-  border: none;
-  color: rgb(var(--text-default));
-  .card-heading {
-    text-align: center;
-    background-color: rgb(var(--card-header-bg));
+.fs-13 {
+  font-size: 13px;
+}
 
-    p {
-      font-size: 11px;
-    }
-  }
-  .card-body {
-    background-color: rgb(var(--card-body-bg));
-    padding: 5px;
+.fs-14 {
+  font-size: 14px;
+}
 
-    &.no-chart {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
+.fs-15 {
+  font-size: 15px;
+}
+
+.green-color {
+  color: rgb(var(--green-color)) !important;
+}
+
+.blue-color {
+  color: rgb(var(--blue-color)) !important;
 }
 
 // bootstrap row custom styles
 .row > * {
   padding-right: calc(var(--bs-gutter-x) * 0.1);
   padding-left: calc(var(--bs-gutter-x) * 0.1);
-}
-
-// table custom styles
-.table {
-  thead {
-    tr {
-      th {
-        font-size: 10px;
-        text-wrap: nowrap;
-        color: rgb(var(--text-muted));
-      }
-    }
-  }
-  tbody {
-    tr {
-      td {
-        font-size: 10px;
-        text-wrap: nowrap;
-
-        span {
-          &.ok {
-            text-transform: uppercase;
-            background-color: rgb(var(--green-color));
-            color: rgb(var(--text-black));
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-weight: 600;
-          }
-
-          &.crit {
-            text-transform: uppercase;
-            background-color: rgb(var(--red-color));
-            color: rgb(var(--text-default));
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
 }
 
 .gauge-fill {

@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import RadialGauge from "./common/RadialGauge";
 import HorizontalBarGauge from "./common/HorizontalBarGauge";
-import { IoReorderThreeSharp } from "react-icons/io5";
-import { toast } from "react-toastify";
 import AreaChart from "./common/AreaChart";
+import Table from "./common/Table";
 
 const Dashboard = () => {
   return (
@@ -45,9 +44,8 @@ const Dashboard = () => {
               <p className="">CPU: Utilization</p>
             </div>
 
-            <div className="card-body no-chart">
-              {/* <RadialGauge value={80.68} status="OK" statusColor="#00cc69" /> */}
-              RadialGauge
+            <div className="card-body">
+              <RadialGauge />
             </div>
           </div>
         </div>
@@ -66,7 +64,7 @@ const Dashboard = () => {
             <div className="card-heading">
               <p className="">CPU: I/O-wait</p>
             </div>
-            <div className="card-body">
+            <div className="card-body no-chart">
               <h6>n/a</h6>
               <p className="fs-9">Thu 18:00</p>
             </div>
@@ -125,8 +123,7 @@ const Dashboard = () => {
             </div>
 
             <div className="card-body no-chart">
-              {/* <RadialGauge value={37.34} status="OK" statusColor="#00cc69" /> */}
-              RadialGauge
+              <RadialGauge />
             </div>
           </div>
         </div>
@@ -162,7 +159,7 @@ const Dashboard = () => {
             <div className="card-body">
               <div
                 className="table-responsive overflowY-auto filesystem-table-wrapper"
-                style={{ maxHeight: "294px" }}
+                style={{ maxHeight: "390px" }}
               >
                 <table className="table table-dark table-striped">
                   <thead className="position-sticky top-0">
@@ -175,7 +172,7 @@ const Dashboard = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {Array.from({ length: 6 }).map((_, index) => (
+                    {Array.from({ length: 9 }).map((_, index) => (
                       <tr key={index}>
                         <td>
                           <span className="ok">ok</span>
@@ -206,12 +203,7 @@ const Dashboard = () => {
                   <p>Disk IO: Utilization</p>
                 </div>
                 <div className="card-body no-chart">
-                  {/* <RadialGauge
-                    value={37.34}
-                    status="OK"
-                    statusColor="#00cc69"
-                  /> */}
-                  RadialGauge
+                  <RadialGauge />
                 </div>
               </div>
             </div>
@@ -244,12 +236,7 @@ const Dashboard = () => {
                   <p>Disk IO: Utilization</p>
                 </div>
                 <div className="card-body no-chart">
-                  {/* <RadialGauge
-                    value={37.34}
-                    status="OK"
-                    statusColor="#00cc69"
-                  /> */}
-                  RadialGauge
+                  <RadialGauge />
                 </div>
               </div>
             </div>
@@ -281,55 +268,10 @@ const Dashboard = () => {
         <div className="col-xl-12 col-lg-12 col-md-12">
           <div className="card">
             <div className="card-heading">
-              <p>CRIT</p>
+              <p className="text-capitalize fs-13">positions</p>
             </div>
             <div className="card-body">
-              <div className="table-responsive">
-                <table className="table table-dark table-striped">
-                  <thead>
-                    <tr>
-                      <th className="text-capitalize">state</th>
-                      <th className="text-capitalize">last OK</th>
-                      <th className="text-capitalize">service</th>
-                      <th className="text-capitalize">icons</th>
-                      <th className="text-capitalize">summary</th>
-                      <th className="text-capitalize">check int.</th>
-                      <th className="text-capitalize">retry</th>
-                      <th className="text-capitalize">att.</th>
-                      <th className="text-capitalize">latency</th>
-                      <th className="text-capitalize">next check</th>
-                      <th className="text-capitalize">contacts</th>
-                      <th className="text-capitalize">service labels</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {Array.from({ length: 10 }).map((_, index) => (
-                      <tr key={index}>
-                        <td>
-                          <span className="crit">crit</span>
-                        </td>
-                        <td>1970-01-01</td>
-                        <td>Aggr Host 09283982384</td>
-                        <td>
-                          <IoReorderThreeSharp />
-                        </td>
-                        <td>
-                          Aggregation state: Critical{" "}
-                          <span className="crit">crit</span>, In downtime: no,
-                          Acknowledged: no
-                        </td>
-                        <td>60 s</td>
-                        <td>60 s</td>
-                        <td>3/3</td>
-                        <td>0.00 s</td>
-                        <td>-</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <Table />
             </div>
           </div>
         </div>
