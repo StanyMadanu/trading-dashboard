@@ -3,7 +3,7 @@ import React from "react";
 const Section3 = () => {
   return (
     <>
-      <div className="section section3 py-7" id="section2">
+      <div className="section section3 py-7" id="section1">
         <div className="container">
           <div className="d-flex flex-column gap-4 mb-5 text-white text-center">
             <h3 className="green-color fw-lighter ls-1 text-capitalize">
@@ -19,7 +19,7 @@ const Section3 = () => {
 
           <div className="row">
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature01.png"
@@ -38,7 +38,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature02.png"
@@ -57,7 +57,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature03.png"
@@ -76,7 +76,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature04.png"
@@ -95,7 +95,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature05.png"
@@ -114,7 +114,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-12">
-              <div className="features-card d-flex gap-4 p-4">
+              <div className="features-card d-flex gap-4 p-4 flex-column flex-sm-row text-center text-sm-start">
                 <div className="feature-img">
                   <img
                     src="https://softivuslab.com/html/critox/assets/images/feature/feature06.png"
@@ -136,7 +136,7 @@ const Section3 = () => {
         </div>
       </div>
 
-      <div className="features-images py-5">
+      <div className="features-images py-7">
         <div className="container d-flex flex-wrap gap-4 justify-content-center">
           <div className="features-box">
             <img

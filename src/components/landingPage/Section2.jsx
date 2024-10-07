@@ -175,7 +175,7 @@ const Section2 = () => {
   ];
 
   return (
-    <div className="section section2 text-center my-5 py-7" id="section1">
+    <div className="section section2 text-center my-5 py-7">
       <div className="container">
         <div className="d-flex flex-column gap-4 mb-5 text-white">
           <h3 className="green-color fw-lighter ls-1 text-capitalize">

@@ -23,9 +23,7 @@ const LandingHeader = ({ scrolled }) => {
           <div className="trading-link" key={i}>
             <a
               href={`#section${i}`}
-              className={`text-uppercase fw-semibold fs-15 ${
-                active === i ? "active" : ""
-              }`}
+              className={`text-uppercase fs-15 ${active === i ? "active" : ""}`}
               onClick={() => setActive(i)}
             >
               {link}
