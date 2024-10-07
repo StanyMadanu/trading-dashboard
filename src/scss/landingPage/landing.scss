@@ -18,51 +18,12 @@
     border-radius: 50px;
     color: #fff;
     button {
-      padding: 14px 45px;
+      padding: 5px 16px;
       background-color: transparent;
       color: #fff;
     }
   }
 }
-
-//============= header styles ======================
-header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-
-  &.header-scrolled {
-    background-color: rgb(var(--landing-primary-color));
-    border: 1px solid rgba(45, 65, 134, 0.8);
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-  }
-
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
-  .trading-links {
-    .trading-link {
-      a {
-        &.active {
-          color: rgb(var(--green-color));
-        }
-      }
-    }
-  }
-}
-
-//============= header styles ======================
 
 .section {
   &.section1,
@@ -106,7 +67,7 @@ header {
           bottom: 0;
           width: 100%;
           background-color: rgb(var(--green-color));
-          padding: 20px 0;
+          padding: 15px 0;
           text-align: center;
           transform: translateY(60px);
           transition: all 0.3s ease-in-out;
@@ -118,6 +79,14 @@ header {
     background-color: unset;
   }
   &.section3 {
-    background-color: green;
+    background-color: #031637;
   }
+}
+
+.features-images {
+  background-image: url(https://softivuslab.com/html/critox/assets/images/core/core-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

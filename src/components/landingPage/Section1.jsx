@@ -8,7 +8,7 @@ const Section1 = () => {
           <h3 className="green-color fw-lighter ls-1 text-capitalize">
             choose your layout
           </h3>
-          <h2 className="fw-bold fs-60 text-uppercase">stunning demo</h2>
+          <h2 className="fw-bold fs-50 text-uppercase">stunning demo</h2>
           <p className="fs-20 ls-1 lh-2">
             A great collection of beautiful website templates for you need.
             Choose the best <br /> suitable template and start customizing it.
@@ -16,7 +16,7 @@ const Section1 = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-8">
+          <div className="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-11">
             <div className="d-flex flex-column justify-content-center align-items-center gap-5">
               <div className="demo-card-wrapper">
                 <div className="demo-card">
@@ -25,7 +25,7 @@ const Section1 = () => {
                     src="https://softivuslab.com/html/critox/assets/images/home/home.png"
                     alt="home-ss"
                   />
-                  <h6 className="view-demo text-capitalize text-white ls-1 fs-18">
+                  <h6 className="view-demo text-capitalize text-white ls-1">
                     view demo
                   </h6>
                 </div>

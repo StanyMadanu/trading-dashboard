@@ -93,19 +93,35 @@ h6 {
 }
 
 .fs-15 {
-  font-size: 15px;
+  // font-size: 15px;
+  font-size: clamp(14px, 2vw, 15px);
+}
+
+.fs-16 {
+  font-size: 16px;
+  // font-size: clamp(14px, 2vw, 16px);
+}
+
+.fs-17 {
+  font-size: 16px;
+  // font-size: clamp(14px, 2vw, 17px);
 }
 
 .fs-18 {
-  font-size: 18px;
+  // font-size: 18px;
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .fs-20 {
   font-size: 20px;
 }
 
+.fs-40 {
+  font-size: clamp(30px, 4vw, 50px);
+}
+
 .fs-50 {
-  font-size: 50px;
+  font-size: clamp(30px, 4vw, 50px);
 }
 
 .fs-60 {

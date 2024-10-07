@@ -9,23 +9,23 @@ const Hero = () => {
           <h3 className="green-color fw-lighter ls-1">
             easy way to build perfect websites
           </h3>
-          <h2 className="fw-bold fs-60">
+          <h2 className="fw-bold fs-50">
             <span className="d-block">built sites with</span>
             the soul of inspiration
           </h2>
         </div>
 
-        <div className="counter-items d-flex justify-content-center align-items-center gap-5 my-5 py-2">
+        <div className="counter-items d-flex flex-wrap justify-content-center align-items-center gap-5 my-5 py-2">
           <div className="counter-item text-start">
-            <h2 className="fw-bold fs-60 green-color mb-2">01</h2>
+            <h2 className="fw-bold fs-50 green-color mb-2">01</h2>
             <h4 className="fw-lighter">home pages</h4>
           </div>
           <div className="counter-item text-start">
-            <h2 className="fw-bold fs-60 green-color mb-2">30+</h2>
+            <h2 className="fw-bold fs-50 green-color mb-2">30+</h2>
             <h4 className="fw-lighter">inner pages</h4>
           </div>
           <div className="counter-item text-start">
-            <h2 className="fw-bold fs-60 green-color mb-2">80+</h2>
+            <h2 className="fw-bold fs-50 green-color mb-2">80+</h2>
             <h4 className="fw-lighter">components</h4>
           </div>
         </div>

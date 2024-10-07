@@ -1,0 +1,115 @@
+//============= header styles ======================
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+
+  &.header-scrolled {
+    background-color: rgb(var(--landing-primary-color));
+    border: 1px solid rgba(45, 65, 134, 0.8);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .trading-links {
+    .trading-link {
+      a {
+        &.active {
+          color: rgb(var(--green-color));
+        }
+      }
+    }
+  }
+
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition-duration: 0.5s;
+  }
+
+  .bars {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  #bar2 {
+    transition-duration: 0.8s;
+  }
+
+  #bar1,
+  #bar3 {
+    width: 70%;
+  }
+
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+  }
+
+  .trading-dropdown-menu {
+    position: absolute;
+    width: 100%;
+    background-color: #032055;
+    left: 0;
+    transform: translateY(5rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+
+    &.d-block {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(7rem);
+    }
+  }
+}
+
+//============= header styles ======================

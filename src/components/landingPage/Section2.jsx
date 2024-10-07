@@ -181,14 +181,14 @@ const Section2 = () => {
           <h3 className="green-color fw-lighter ls-1 text-capitalize">
             choose your layout
           </h3>
-          <h2 className="fw-bold fs-60 text-uppercase mb-5">inner pages</h2>
+          <h2 className="fw-bold fs-50 text-uppercase mb-5">inner pages</h2>
         </div>
 
         <div className="row justify-content-center gap-4 row-gap-5">
           {innerPagesData.map((innerPage, index) => (
             <div
               key={index}
-              className="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-8"
+              className="col-xl-5 col-lg-5 col-md-5 col-sm-9 col-11"
             >
               <div className="d-flex flex-column justify-content-center align-items-center gap-5 mb-4">
                 <div className="demo-card-wrapper">
@@ -198,7 +198,7 @@ const Section2 = () => {
                       src={innerPage.imgUrl}
                       alt="home-ss"
                     />
-                    <h6 className="view-demo text-capitalize text-white ls-1 fs-18">
+                    <h6 className="view-demo text-capitalize text-white ls-1 fs-17">
                       view demo
                     </h6>
                   </div>
@@ -218,7 +218,7 @@ const Section2 = () => {
                 src="https://softivuslab.com/html/critox/assets/images/home/home.png"
                 alt="home-ss"
               />
-              <h6 className="view-demo text-capitalize text-white ls-1 fs-18">
+              <h6 className="view-demo text-capitalize text-white ls-1 fs-17">
                 view demo
               </h6>
             </div>
