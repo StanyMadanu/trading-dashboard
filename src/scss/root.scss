@@ -6,7 +6,7 @@
   --text-muted: 156, 156, 156; //#9c9c9c
   --text-black: 0, 0, 0; //#000000
 
-  --green-color: 19, 211, 137; //#13d389
+  --green-color: 6, 173, 94; //#06ad5e
   --blue-color: 41, 98, 255; //#2962FF
   --red-color: 200, 50, 50; //#C83232
   --black-color: 0, 0, 0; //#000000
@@ -19,6 +19,8 @@
   --landing-primary-color: 0, 18, 50; //#001232
   --landing-secondary-color: 6, 173, 94; //#06ad5e
   --landing-text-default: 219, 226, 251; //#dbe2fb
+  --landing-box-shadow: 3, 56, 146, 0.56; //
+  --landing-white-color: 255, 255, 255;
 }
 
 * {
@@ -28,6 +30,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: rgb(var(--secondary-color));
   overflow: hidden auto;
 
@@ -43,6 +46,7 @@ a {
 button {
   border: none;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 p {
@@ -96,8 +100,32 @@ h6 {
   font-size: 18px;
 }
 
+.fs-20 {
+  font-size: 20px;
+}
+
 .fs-50 {
   font-size: 50px;
+}
+
+.fs-60 {
+  font-size: clamp(30px, 4vw, 60px);
+}
+
+// paddings
+.py-6 {
+  padding: 6rem 0;
+}
+
+.py-7 {
+  padding: 7rem 0;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+.lh-2 {
+  line-height: 2rem;
 }
 
 .green-color {

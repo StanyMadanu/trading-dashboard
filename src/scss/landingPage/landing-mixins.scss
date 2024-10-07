@@ -1,0 +1,14 @@
+@mixin cardAfterBefore($left, $right, $bottom) {
+  position: absolute;
+  content: "";
+  height: 100px;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  background-color: rgb(var(--landing-white-color), 0.2);
+  z-index: 0;
+}
+
+@mixin cardShadow {
+  box-shadow: 0px 10px 51px 0px rgb(var(--landing-box-shadow));
+}

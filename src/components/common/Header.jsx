@@ -25,7 +25,10 @@ const Header = () => {
         </Link>
       </div>
       <div>
-        <Link to="/landing" className="text-capitalize fs-12 fw-semibold p-2">
+        <Link
+          to="/landing-page"
+          className="text-capitalize fs-12 fw-semibold p-2"
+        >
           Landing Page
         </Link>
       </div>

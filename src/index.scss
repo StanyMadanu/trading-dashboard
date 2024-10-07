@@ -1,12 +1,14 @@
 // Application scss files
-@import url("./scss/root.scss");
-@import url("./scss/table.scss");
-@import url("./scss/card.scss");
-@import url("./scss/header.scss");
-@import url("./scss/layout.scss");
-@import url("./scss/dashboard.scss");
-@import url("./scss/login.scss");
-@import url("./scss/notFound.scss");
+@import "./scss/root.scss";
+@import "./scss/table.scss";
+@import "./scss/card.scss";
+@import "./scss/header.scss";
+@import "./scss/layout.scss";
+@import "./scss/dashboard.scss";
+@import "./scss/login.scss";
+@import "./scss/notFound.scss";
 
 // landing scss files
-@import url("./scss/landingPage/landing.scss");
+@import "./scss/landingPage/landing-mixins.scss";
+@import "./scss/landingPage/landing.scss";
+@import "./scss//landingPage/hero.scss";

@@ -5,7 +5,7 @@ import NotFound from "./components/NotFound";
 import Login from "./components/Login";
 import OAuthCallback from "./components/OAuthCallback";
 import ProtectedRoute from "./routes/ProtectedRoute";
-import Landing from "./components/landingPage/Landing";
+import LandingHome from "./components/landingPage/LandingHome";
 
 const router = createBrowserRouter([
   {
@@ -18,34 +18,26 @@ const router = createBrowserRouter([
   },
   {
     path: "",
-    element: <Layout />,
+    element: (
+      <ProtectedRoute>
+        <Layout />
+      </ProtectedRoute>
+    ),
     children: [
       {
         path: "/",
-        element: (
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        ),
+        element: <Dashboard />,
       },
       {
         path: "/dashboard",
-        element: (
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        ),
+        element: <Dashboard />,
       },
     ],
   },
 
   {
-    path: "/landing",
-    element: (
-      <ProtectedRoute>
-        <Landing />
-      </ProtectedRoute>
-    ),
+    path: "/landing-page",
+    element: <LandingHome />,
   },
   {
     path: "*",
